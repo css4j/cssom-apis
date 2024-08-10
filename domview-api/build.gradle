@@ -1,0 +1,27 @@
+/*
+ *
+ * Copyright (c) 2021-2024, Carlos Amengual.
+ *
+ * Licensed under a BSD-style License. You can find the license here:
+ * https://css4j.github.io/LICENSE.txt
+ *
+ */
+ /*
+  * SPDX-License-Identifier: BSD-3-Clause
+  */
+
+plugins {
+	id 'cssom-apis.java-conventions'
+}
+
+description = 'io.sf.w3:domview-api'
+
+version = '1.0'
+
+dependencies {
+	api project(':cssom-api')
+}
+
+publishing.publications.maven(MavenPublication).pom {
+	description = "DOM View 1.0 Java binding"
+}

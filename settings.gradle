@@ -1,0 +1,4 @@
+rootProject.name = 'cssom-apis'
+
+include(':cssom-api')
+include(':domview-api')

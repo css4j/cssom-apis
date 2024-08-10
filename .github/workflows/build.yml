@@ -1,0 +1,33 @@
+# Build CI workflow
+
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  # Allows to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    name: Java build
+
+    steps:
+      - uses: actions/checkout@v3
+
+      # Set JDK
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+
+      # Build
+      - name: Build with Gradle
+        run: ./gradlew build
