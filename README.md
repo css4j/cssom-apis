@@ -70,6 +70,10 @@ repositories {
             releasesOnly()
         }
         content {
+            // Include all the groups needed by EchoSVG
+            includeGroupByRegex 'io\\.sf\\..*'
+
+            // Alternative to the regex:
             includeGroup 'io.sf.w3'
         }
     }
