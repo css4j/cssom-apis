@@ -25,3 +25,14 @@ dependencies {
 publishing.publications.maven(MavenPublication).pom {
 	description = "DOM View 1.0 Java binding"
 }
+
+tasks.register('cleanBuildSrc') {
+	description = 'Clean the buildSrc directory'
+	doLast {
+		delete("$rootDir/buildSrc/build")
+	}
+}
+
+tasks.named('clean') {
+	finalizedBy('cleanBuildSrc')
+}
