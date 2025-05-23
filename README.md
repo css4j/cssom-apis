@@ -28,7 +28,6 @@ git clone https://github.com/css4j/cssom-apis.git
 cd cssom-apis
 ./gradlew build
 ```
-or just `gradlew build` (without the `./`) on a Windows command prompt.
 
 <br/>
 
@@ -36,17 +35,17 @@ or just `gradlew build` (without the `./`) on a Windows command prompt.
 
 Use:
 
-- `gradlew publishToMavenLocal` to install both modules in your local Maven repository.
+- `./gradlew publishToMavenLocal` to install both modules in your local Maven repository.
 
-- `gradlew :cssom-api:publishToMavenLocal` to install the cssom-api module into your local Maven repository.
+- `./gradlew :cssom-api:publishToMavenLocal` to install the cssom-api module into your local Maven repository.
 
-- `gradlew :domview-api:publishToMavenLocal` to install the domview-api module into your local Maven repository.
+- `./gradlew :domview-api:publishToMavenLocal` to install the domview-api module into your local Maven repository.
 
-- `gradlew publish` to deploy both modules to a (generally remote) Maven repository.
+- `./gradlew publish` to deploy both modules to a (generally remote) Maven repository.
 
-- `gradlew :cssom-api:publish` to deploy the cssom-api module to a Maven repository.
+- `./gradlew :cssom-api:publish` to deploy the cssom-api module to a Maven repository.
 
-- `gradlew :domview-api:publish` to deploy the domview-api module to a Maven repository.
+- `./gradlew :domview-api:publish` to deploy the domview-api module to a Maven repository.
 
 Before deploying to a remote Maven repository, please read the
 `publishing.repositories.maven` block of
@@ -83,7 +82,7 @@ Then, in your `build.gradle` file you can list the dependencies, for example:
 
 ```groovy
 dependencies {
-    api 'io.sf.w3:cssom-api:0.1'
+    api 'io.sf.w3:cssom-api:0.2'
 }
 ```
 
