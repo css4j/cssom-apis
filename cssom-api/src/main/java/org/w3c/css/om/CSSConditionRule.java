@@ -13,8 +13,8 @@ package org.w3c.css.om;
 import org.w3c.dom.DOMException;
 
 /**
- * Represents all the "conditional" at-rules, which consist of a condition and a statement
- * block.
+ * Represents all the "conditional" at-rules, which consist of a condition and a
+ * statement block.
  */
 public interface CSSConditionRule extends CSSGroupingRule {
 
@@ -28,9 +28,8 @@ public interface CSSConditionRule extends CSSGroupingRule {
 	/**
 	 * Sets the condition associated to this rule.
 	 * 
-	 * @param conditionText
-	 *            the condition text.
-	 * @throws DOMException if the condition could not be parsed.
+	 * @param conditionText the condition text.
+	 * @throws DOMException if the condition could not be parsed or is read-only.
 	 */
 	void setConditionText(String conditionText) throws DOMException;
 

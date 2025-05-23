@@ -96,6 +96,8 @@ public interface CSSRule extends org.w3c.dom.css.CSSRule {
 	short CUSTOM_MEDIA_RULE = 17;
 	short PROPERTY_RULE = 18;
 
+	short NESTED_DECLARATIONS = 19;
+
 	/**
 	 * If this rule is contained inside another rule, return that rule. If it is not nested
 	 * inside any other rules, return <code>null</code>.

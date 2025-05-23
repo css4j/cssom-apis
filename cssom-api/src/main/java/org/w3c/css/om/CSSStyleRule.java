@@ -16,7 +16,7 @@ import org.w3c.dom.DOMException;
  * A CSS style rule.
  * 
  */
-public interface CSSStyleRule extends CSSRule {
+public interface CSSStyleRule extends CSSGroupingRule {
 
 	/**
 	 * Get a parsable serialization of the selector(s).
