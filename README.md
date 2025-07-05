@@ -82,7 +82,7 @@ Then, in your `build.gradle` file you can list the dependencies, for example:
 
 ```groovy
 dependencies {
-    api 'io.sf.w3:cssom-api:0.2'
+    api 'io.sf.w3:cssom-api:0.3'
 }
 ```
 
