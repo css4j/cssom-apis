@@ -121,7 +121,7 @@ tasks.withType(AbstractArchiveTask).configureEach {
 }
 
 checkstyle {
-	toolVersion = '10.24.0'
+	toolVersion = "${checkstyleVersion}"
 }
 
 publishing {
