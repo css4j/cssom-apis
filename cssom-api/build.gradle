@@ -16,7 +16,7 @@ plugins {
 
 description = 'io.sf.w3:cssom-api'
 
-version = '0.3'
+version = '0.4-SNAPSHOT'
 
 publishing.publications.maven(MavenPublication).pom {
 	description = "CSS OM 1.0-pre API Java binding"
