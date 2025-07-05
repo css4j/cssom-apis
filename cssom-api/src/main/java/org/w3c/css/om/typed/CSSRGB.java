@@ -24,9 +24,9 @@ public interface CSSRGB extends CSSColorValue {
 	CSSNumericValue getR();
 
 	/**
-	 * Sets the {@code r} component as a percentage.
+	 * Sets the {@code r} component.
 	 * 
-	 * @param r the {@code r} component as a percentage.
+	 * @param r the {@code r} component as a number in the {@code [0-1]} interval.
 	 */
 	void setR(double r);
 
@@ -47,9 +47,9 @@ public interface CSSRGB extends CSSColorValue {
 	CSSNumericValue getG();
 
 	/**
-	 * Sets the {@code g} component as a percentage.
+	 * Sets the {@code g} component.
 	 * 
-	 * @param g the {@code g} component as a percentage.
+	 * @param g the {@code g} component as a number in the {@code [0-1]} interval.
 	 */
 	void setG(double g);
 
@@ -70,9 +70,9 @@ public interface CSSRGB extends CSSColorValue {
 	CSSNumericValue getB();
 
 	/**
-	 * Sets the {@code b} component as a percentage.
+	 * Sets the {@code b} component.
 	 * 
-	 * @param b the {@code b} component as a percentage.
+	 * @param b the {@code b} component as a number in the {@code [0-1]} interval.
 	 */
 	void setB(double b);
 
@@ -93,9 +93,9 @@ public interface CSSRGB extends CSSColorValue {
 	CSSNumericValue getAlpha();
 
 	/**
-	 * Sets the alpha channel as a percentage.
+	 * Sets the alpha channel.
 	 * 
-	 * @param alpha the alpha channel as a percentage.
+	 * @param alpha the alpha channel as a number in the {@code [0-1]} interval.
 	 */
 	void setAlpha(double alpha);
 

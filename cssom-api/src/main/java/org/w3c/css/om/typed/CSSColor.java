@@ -45,9 +45,9 @@ public interface CSSColor extends CSSColorValue {
 	CSSNumericValue getAlpha();
 
 	/**
-	 * Sets the alpha channel as a percentage.
+	 * Sets the alpha channel.
 	 * 
-	 * @param alpha the alpha channel as a percentage.
+	 * @param alpha the alpha channel as a number in the {@code [0-1]} interval.
 	 */
 	void setAlpha(double alpha);
 

@@ -26,7 +26,7 @@ public interface CSSLCH extends CSSColorValue {
 	/**
 	 * Sets the {@code l} component as a percentage.
 	 * 
-	 * @param l the {@code l} component as a percentage.
+	 * @param l the {@code l} component as a number in the {@code [0-1]} interval.
 	 */
 	void setL(double l);
 
@@ -48,7 +48,7 @@ public interface CSSLCH extends CSSColorValue {
 	/**
 	 * Sets the {@code c} component as a percentage.
 	 * 
-	 * @param c the {@code c} component as a percentage.
+	 * @param c the {@code c} component as a number in the {@code [0-1]} interval.
 	 */
 	void setC(double c);
 

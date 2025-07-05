@@ -26,7 +26,7 @@ public interface CSSLab extends CSSColorValue {
 	/**
 	 * Sets the {@code l} component as a percentage.
 	 * 
-	 * @param l the {@code l} component as a percentage.
+	 * @param l the {@code l} component as a number in the {@code [0-1]} interval.
 	 */
 	void setL(double l);
 
